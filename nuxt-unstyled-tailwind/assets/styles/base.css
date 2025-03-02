@@ -1,0 +1,120 @@
+/* Импорт шрифтов */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+@import 'primeicons/primeicons.css';
+
+:root {
+    /* Шрифты */
+    --p-font-heading: 'Outfit', sans-serif;
+    --p-font-body: 'Inter', sans-serif;
+
+
+    /* Основные цвета */
+    --p-primary-50: #E6F7FF;
+    --p-primary-100: #A2D2FF;
+    --p-primary-200: #6EBFFF;
+    --p-primary-300: #33ADFF;
+    --p-primary-400: #00AEEF;
+    --p-primary-500: #0099D6;
+    --p-primary-600: #007BB8;
+    --p-primary-700: #005B96;
+    --p-primary-800: #004B7D;
+    --p-primary-900: #003B64;
+    --p-primary-950: #002A47;
+    
+    /* Поверхности */
+    --p-surface-0: #ffffff;
+    --p-surface-50: #fafafa;
+    --p-surface-100: #f5f5f5;
+    --p-surface-200: #e5e5e5;
+    --p-surface-300: #d4d4d4;
+    --p-surface-400: #8A8A8A;
+    --p-surface-500: #737373;
+    --p-surface-600: #525252;
+    --p-surface-700: #404040;
+    --p-surface-800: #2A2A2A;
+    --p-surface-900: #171717;
+    --p-surface-950: #0a0a0a;
+    
+    --p-content-border-radius: 6px;
+}
+
+/* Light */
+:root {
+    --p-primary-color: var(--p-primary-500);
+    --p-primary-contrast-color: var(--p-surface-0);
+    --p-primary-hover-color: var(--p-primary-600);
+    --p-primary-active-color: var(--p-primary-700);
+    --p-content-border-color: var(--p-surface-200);
+    --p-content-hover-background: var(--p-surface-100);
+    --p-content-hover-color: var(--p-surface-800);
+    --p-highlight-background: var(--p-primary-50);
+    --p-highlight-color: var(--p-primary-700);
+    --p-highlight-focus-background: var(--p-primary-100);
+    --p-highlight-focus-color: var(--p-primary-800);
+    --p-text-color: var(--p-surface-700);
+    --p-text-hover-color: var(--p-surface-800);
+    --p-text-muted-color: var(--p-surface-500);
+    --p-text-hover-muted-color: var(--p-surface-600);
+}
+
+/* Dark */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --p-primary-color: var(--p-primary-400);
+        --p-primary-contrast-color: var(--p-surface-900);
+        --p-primary-hover-color: var(--p-primary-300);
+        --p-primary-active-color: var(--p-primary-200);
+        --p-content-border-color: var(--p-surface-700);
+        --p-content-hover-background: var(--p-surface-800);
+        --p-content-hover-color: var(--p-surface-0);
+        --p-highlight-background: color-mix(in srgb, var(--p-primary-400), transparent 84%);
+        --p-highlight-color: rgba(255, 255, 255, 0.87);
+        --p-highlight-focus-background: color-mix(in srgb, var(--p-primary-400), transparent 76%);
+        --p-highlight-focus-color: rgba(255, 255, 255, 0.87);
+        --p-text-color: var(--p-surface-0);
+        --p-text-hover-color: var(--p-surface-0);
+        --p-text-muted-color: var(--p-surface-400);
+        --p-text-hover-muted-color: var(--p-surface-300);
+    }
+}
+
+/* Применение шрифтов */
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--p-font-heading);
+}
+
+body, p, span {
+    font-family: var(--p-font-body);
+}
+
+.skybrick-marquee {
+    background-image: url(/herodown.svg);
+    background-repeat: repeat-x;
+    background-size: auto 100%;
+    height: 4rem;
+    margin-bottom: 6rem;
+    margin-top: 6rem;
+    width: 100%;
+}
+
+.blog-content {
+    line-height: 1.5;
+}
+
+.blog-content h2 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    font-family: var(--p-font-body);
+    line-height: 1.5;
+}
+
+.blog-content p {
+    font-size: 1rem;
+    font-weight: 400;
+    font-family: var(--p-font-body);
+    line-height: 1.5;
+    margin-bottom: 1rem;
+}
+
+
